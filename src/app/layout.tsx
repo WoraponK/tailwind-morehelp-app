@@ -6,7 +6,6 @@ import 'material-icons/iconfont/material-icons.css';
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Buymeacoffee from "./components/Buymeacoffee";
 import Navbar from "./components/Navbar";
 
 import Favicon from '/public/images/favicon.ico';
@@ -28,13 +27,14 @@ export default function RootLayout({
     <html lang="en" data-theme="forest">
       <body className={inter.className}>
         <div className="flex justify-center min-h-screen">
-          <div className="w-3/5">
+          <div className="w-4/5">
             <Header />
-            <Navbar />
-            <main className="py-8">
-              {children}
-            </main>
-            <Buymeacoffee />
+            <div className="pt-8 grid grid-cols-[15%_85%]">
+              <Navbar />
+              <main className="p-4">
+                {children}
+              </main>
+            </div>
             <Footer />
           </div>
         </div>

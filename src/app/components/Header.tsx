@@ -11,10 +11,20 @@ function Header() {
                     <p className='text-base-content rotate-12 font-bold text-4xl'>?</p>
                     <h1 className='text-4xl font-bold text-primary'>TailwindMorehelp</h1>
                 </Link>
-                <ul className='flex space-x-3'>
+                <ul className='flex space-x-6'>
+                    <li>
+                        <Link href={'/'} className='text-base-content underline-offset-2 hover:text-secondary hover:underline'>
+                            Home
+                        </Link>
+                    </li>
                     <li>
                         <Link href={'/about'} className='text-base-content underline-offset-2 hover:text-secondary hover:underline'>
                             About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href={'/favorite'} className='text-base-content underline-offset-2 hover:text-secondary hover:underline'>
+                            Favorite
                         </Link>
                     </li>
                     <li>
