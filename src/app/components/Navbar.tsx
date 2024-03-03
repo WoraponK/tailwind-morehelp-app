@@ -8,8 +8,8 @@ function Navbar() {
     const pathname = usePathname();
 
     return (
-        <nav className="border-b border-base-content py-4 flex justify-between sticky top-0 backdrop-blur-sm">
-            <ul className="flex space-x-2">
+        <nav className="border-r border-base-content flex justify-between backdrop-blur-sm pb-8">
+            <ul className="flex flex-col space-y-2 w-full pr-4">
                 <Link
                     href="/"
                     className={
@@ -54,13 +54,7 @@ function Navbar() {
                     Colors
                 </Link>
             </ul>
-            <Link
-                href="/favorite"
-                className={
-                    pathname === "/favorite" ? "btn btn-primary text-white" : "btn"
-                }>
-                Favorite
-            </Link>
+
         </nav>
     );
 }
