@@ -2,7 +2,7 @@ import React from 'react'
 
 function FavoriteTab() {
   return (
-    <div>page</div>
+    <div>FavoriteTab</div>
   )
 }
 
